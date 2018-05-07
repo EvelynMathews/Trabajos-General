@@ -1,0 +1,78 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.clearfix {
+	clear:both;
+}
+
+body {
+	background-color: gainsboro;
+	font-family: sans-serif;
+	color:white;
+}
+
+#logo {
+	float:left;
+	border-right:1px solid white; 
+	height:inherit;
+	width:200px;
+	padding-top:35px;
+	text-align:center;
+}
+
+nav {
+	padding-top:35px;
+	text-align:center;
+}
+
+header {
+	height:100px;
+}
+
+#container {
+}
+
+header, article, footer {
+	background-color: lightpink;
+}
+
+#container {
+	width:80%;
+	margin:0 auto;
+}
+
+.grid {
+	margin:10px 0;
+	text-align:center;
+}
+
+.item {
+	float:left;
+	background-color: thistle;
+	width:calc(25% - 34px);
+	margin:17px;
+	height:200px;
+}
+
+.box {
+	text-align: center;
+	margin:5px 0;
+}
+
+article {
+	float:left;
+	height:250px;
+	width:calc(33% - 20px);
+	margin:0 10px;
+}
+
+footer {
+	margin-top:20px;
+	bottom:0;
+	height:50px;
+	padding-top:15px;
+	text-align:center;
+}

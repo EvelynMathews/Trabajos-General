@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Leckerli+One|Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div id="container">
+		<div id="menu">
+			<h2 class="titulo">Elige tu mejor opción de almuerzo</h3>
+			<form action="submit" id="formulario">
+				<p>Plato principal</p>
+				<select id="ddown_principal"></select>
+				<p>Guarnición</p>
+				<select id="ddown_guarnicion"></select>
+				<p>Postre</p>
+				<select id="ddown_postre"></select>
+				<button type="button" id="confirmar" onclick="mostrarTicket()">Confirmar</button>
+			</form>
+		</div>
+
+		<div id="ticket">
+			<h2>Tu almuerzo:</h3>
+			<ul id="items"></div>
+		</div>
+
+	</div>
+
+<script type="text/javascript" src="js/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:Lato;
+}
+
+#container {
+	width:500px;
+	margin:20px auto;
+	padding:20px;
+	background-color: #80CBC4;
+}
+
+h1 {
+	margin:20px 0 30px;
+	text-align: center;
+	color:#37474F;
+}
+
+.titulo {
+	font-weight: bold;
+}
+
+.inline-field {
+	display:inline-block;
+}
+
+label {
+	display:block;
+	margin-bottom:5px;
+}
+
+.inline-label {
+	display:inline;
+}
+
+.field {
+	margin:10px 0;
+}
+
+input, select, textarea {
+	border:1px solid black;
+	font-size:16px;
+}
+
+.obligatorio > label:first-child::after {
+	content:"*";
+	font-size:20px;
+}
+
+.hidden {
+	display:none;
+}
+
+.error {
+	color:red;
+	font-size:10px;
+}
+
+.obLabel {
+	visibility:hidden;	
+}
+
+#buttons {
+	text-align: center;
+	margin-top:20px;
+}
+
+#enviar, #limpiar {
+	font-size:18px;
+	padding:2px;
+}

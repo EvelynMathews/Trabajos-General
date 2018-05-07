@@ -1,0 +1,38 @@
+/* soy otro comentario */
+
+body {
+	background:pink;
+}
+
+h1 {
+	font-size:62px;
+	color:white;
+}
+
+#arriba {
+	background:coral;
+}
+
+#abajo {
+	background:lavender;
+}
+
+h3 {
+	background:purple;
+}
+
+h4 {
+	background:red;
+}
+
+h5 {
+	background:orange;
+}
+
+h6 {
+	 background:yellow;
+}
+
+h3, h4 {
+	color:white;
+}

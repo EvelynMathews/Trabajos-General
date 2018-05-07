@@ -1,0 +1,75 @@
+body {
+	font-family: "Montserrat";
+	background-image: url("../img/background.png");
+}
+
+/* color */
+.title, ul, ul i {
+	color:olive;
+}
+
+/* font */
+button, input {
+	font-family: "Montserrat";
+	font-size:14px;
+}
+
+#container {
+	width:45%;
+	margin:0 auto;
+	padding:10px 20px;
+	border:2px solid olive;
+	background-color: #fafafa;
+	text-align:center;
+}
+
+.title {
+	font-family: "Abril Fatface";
+	text-align: center;
+	font-size:48px;
+	margin:20px 0;
+}
+
+#input-container {
+	text-align: center;
+}
+
+#input {
+	width:80%;
+}
+
+#input:active, #input:focus {
+	outline:0;
+}
+
+ul {
+	text-align:left;
+}
+
+ul i {
+	margin:0 5px;
+}
+
+li {
+	width:100%;
+	margin:5px 0;
+	color:black;
+}
+
+li .btn-container {
+	display:inline-block;
+	float:right;
+}
+
+li .textContainer {
+}
+
+#btnClear {
+	margin:20px 0;
+}
+
+@media (max-width:1024px) {
+	#container {
+		width:80%;
+	}
+}

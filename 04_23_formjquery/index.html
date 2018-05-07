@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>formulario jQuery</title>
+</head>
+<body>
+	<form id="alquiler" method="post">
+		<div>
+			<label>Nombre</label>
+			<input type="text" id="nombre">
+		</div>
+		<div>
+			<label>Apellido</label>
+			<input type="text" id="apellido">
+		</div>
+		<div>
+			<label>Email</label>
+			<input type="text" id="email">
+		</div>
+		<div id="genero">
+			<label class="titulo">Género</label>
+			<input type="checkbox" name="genero" class="genero" id="comedia">
+			<label for="comedia">Comedia</label>
+			<input type="checkbox" name="genero" class="genero" id="romance">
+			<label for="romance">Romance</label>
+			<input type="checkbox" name="genero" class="genero" id="terror">
+			<label for="terror">Terror</label>
+		</div>
+		<div>
+			<!-- <button id="limpiar">Limpiar</button> -->
+			<input type="reset" value="Limpiar" id="limpiar"> <!-- type="reset": limpia el formulario automáticamente D: -->
+			<button id="alquilar">Alquilar</button>
+		</div>
+ 		<div id="error"></div>
+	</form>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

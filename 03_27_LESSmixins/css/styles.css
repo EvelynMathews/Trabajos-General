@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  font-size: 36px;
+  font-family: sans-serif;
+}
+#container {
+  width: 60%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.bola {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.roja {
+  background-color: red;
+}
+.roja:hover {
+  background-color: #990000;
+}
+.azul {
+  background-color: blue;
+}
+.azul:hover {
+  background-color: #000099;
+}
+.verde {
+  background-color: limegreen;
+}
+.verde:hover {
+  background-color: #1e7b1e;
+}

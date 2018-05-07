@@ -1,0 +1,9 @@
+?
+-versión tablet?
+-fuente para el cuerpo?
+
++
+-versión mobile: contenido más accesible
+-desktop: los posts destacados ocultan mucho del contenido que viene después - mismo con las tres imágenes de categorías
+-redes sociales pueden ir en el aside (igual que en tablet)
+-imagen de header de artículo es poco consistente con el resto del sitio

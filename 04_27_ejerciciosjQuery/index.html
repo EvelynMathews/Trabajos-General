@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Formulario de inscripción</title>
+</head>
+<body>
+	<div id="container">
+		<form action="">
+			<section class="required">
+				<label for="nombre">Nombre</label>
+				<input type="text" id="nombre">
+			</section>
+			<section class="required">
+				<label for="apellido">Apellido</label> <!-- sólo letras? -->
+				<input type="text" id="apellido">
+			</section>
+			<section>
+				<label for="profileImg">Imagen de perfil</label>
+				<input type="file" id="profileImg"> <!-- algún tipo de restricción -->
+			</section>
+			<section class="required">
+				<label for="fechaNacimiento">Fecha de nacimiento</label>
+				<input type="date" id="fechaNacimiento"> <!-- mínimo 21 años -->
+			</section>
+			<section class="required">
+				<label>Tipo y número de documento</label>
+				<label for="dniTipo" class="hidden">Tipo de documento</label>
+				<select id="dniTipo">
+					<option value="0" selected disabled>Tipo</option>
+					<option value="1">DNI</option>
+					<option value="2">LE</option>
+					<option value="3">LC</option>
+				</select>
+				<label for="dniNumero" class="hidden">Número de documento</label>
+				<input type="text" maxlength="8" id="dniNumero"> <!-- sólo números? -->
+			</section>
+			<section>
+				<label for="observaciones">Observaciones</label>
+				<input type="text" id="observaciones">
+				<label for=""></label>
+			</section>
+			<section class="required">
+				<label for="terms" class="hidden">Términos y condiciones</label>
+				<input type="checkbox" id="terms"><label class="inline">Acepto los <a href id="modal-link">términos y condiciones</a></label>
+			</section>
+			<button>Enviar</button>
+		</form>
+		
+		<ul id="errors" class="hidden">
+			<p>Se han detectado los siguientes errores:</p>
+		</section>
+
+	</div>
+
+	<div id="modal">
+		<div class="modal-content">
+			<h2>Términos y condiciones</h2>
+			<div class="terms-text">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae purus eget risus scelerisque venenatis. Maecenas ut consectetur ante. Suspendisse sollicitudin, tellus in volutpat faucibus, lorem nisi sodales arcu, at lobortis purus leo a tortor. Integer id imperdiet diam. Nulla facilisi. Suspendisse eget iaculis nunc. Sed molestie faucibus turpis, et iaculis dui semper sed. Curabitur dignissim, massa vitae dignissim venenatis, quam felis sodales purus, quis finibus orci massa id tellus. Praesent commodo mattis magna, quis gravida ex mattis nec. Integer et urna tempor, porttitor mi et, venenatis felis. Duis neque lectus, imperdiet ut tristique a, ornare non urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tincidunt ornare dolor, eget scelerisque urna ornare in. Fusce vitae arcu quis massa sodales eleifend a a risus. Duis ante arcu, mattis sit amet enim eu, feugiat venenatis purus.</p>
+				<p>Aliquam urna felis, blandit eget sapien sed, ultrices sodales augue. Donec gravida nec lectus sed sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer in porttitor ex. Aliquam tempus, sapien vel efficitur elementum, massa quam dapibus diam, et faucibus sapien dui a urna. Nunc consectetur tellus massa. Duis lectus magna, tincidunt sit amet nulla eu, viverra feugiat libero. Mauris condimentum sapien risus, dapibus tincidunt nibh maximus non. In finibus accumsan leo, at hendrerit massa placerat vel. Suspendisse in aliquam augue. Maecenas sagittis venenatis urna eget condimentum.</p>
+				<p>Aenean molestie iaculis ex, ac tincidunt nisi. Etiam quis viverra lacus. Sed in orci semper, rhoncus augue et, fringilla neque. Duis ultrices ut metus in porttitor. Cras ultricies tortor at lobortis blandit. Etiam in urna mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus mi quis tortor bibendum, at finibus leo iaculis. Duis nec elit blandit, laoreet elit accumsan, interdum ante. Sed sodales nec justo nec ultrices. Vestibulum convallis enim quis varius cursus. Etiam nisl dolor, lobortis non consequat id, pretium et magna. Suspendisse viverra a nisi vitae malesuada. In aliquet ipsum felis, eu ullamcorper velit dapibus vel. Nulla tincidunt sed justo at iaculis. Aliquam sit amet consectetur arcu, in consectetur justo.</p>
+				<p>Aenean molestie iaculis ex, ac tincidunt nisi. Etiam quis viverra lacus. Sed in orci semper, rhoncus augue et, fringilla neque. Duis ultrices ut metus in porttitor. Cras ultricies tortor at lobortis blandit. Etiam in urna mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus mi quis tortor bibendum, at finibus leo iaculis. Duis nec elit blandit, laoreet elit accumsan, interdum ante. Sed sodales nec justo nec ultrices. Vestibulum convallis enim quis varius cursus. Etiam nisl dolor, lobortis non consequat id, pretium et magna. Suspendisse viverra a nisi vitae malesuada. In aliquet ipsum felis, eu ullamcorper velit dapibus vel. Nulla tincidunt sed justo at iaculis. Aliquam sit amet consectetur arcu, in consectetur justo.</p>
+				<p>Aenean molestie iaculis ex, ac tincidunt nisi. Etiam quis viverra lacus. Sed in orci semper, rhoncus augue et, fringilla neque. Duis ultrices ut metus in porttitor. Cras ultricies tortor at lobortis blandit. Etiam in urna mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus mi quis tortor bibendum, at finibus leo iaculis. Duis nec elit blandit, laoreet elit accumsan, interdum ante. Sed sodales nec justo nec ultrices. Vestibulum convallis enim quis varius cursus. Etiam nisl dolor, lobortis non consequat id, pretium et magna. Suspendisse viverra a nisi vitae malesuada. In aliquet ipsum felis, eu ullamcorper velit dapibus vel. Nulla tincidunt sed justo at iaculis. Aliquam sit amet consectetur arcu, in consectetur justo.</p>
+			</div>
+			<div id="close-buttons"><a href="#" class="close aceptar">Aceptar</a><a href="#" class="close">Cerrar</a></div>			
+		</div>
+	</div>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

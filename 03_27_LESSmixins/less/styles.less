@@ -1,0 +1,55 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	color:white;
+	font-size:36px;
+	font-family:sans-serif;
+}
+
+#container {
+	width:60%;
+	margin:30px auto;
+	display:flex;
+	justify-content: space-between;
+}
+
+.bola {
+	border-radius:50%;
+	width:300px;
+	height:300px;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.roja {
+	@color:red;
+	background-color: @color;
+
+	&:hover {
+		background-color:darken(@color, 20%);
+	}
+
+}
+
+.azul {
+	@color:blue;
+	background-color: @color;
+
+
+	&:hover {
+		background-color:darken(@color, 20%);
+	}
+}
+
+.verde {
+	@color:limegreen;
+	background-color: @color;
+
+
+	&:hover {
+		background-color:darken(@color, 20%);
+	}
+}

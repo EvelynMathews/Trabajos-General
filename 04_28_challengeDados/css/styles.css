@@ -1,0 +1,60 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	height:100vh;
+	background-image:url("../img/bg.jpg");
+	background-size: contain;
+	font-family: "Fugaz One";
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	width:600px;
+	padding:20px;
+	border:1px solid #1B5E20;
+	border-radius: 10px;
+	box-shadow: -7px 5px 5px grey;
+	background-color: #1B5E20;
+	text-align: center;
+}
+
+section {
+	margin:20px 0;
+}
+
+button {
+	padding: 10px;
+	font-size: 20px;
+	font-family: "Fugaz One"; /* FF3.6-15 */
+	border-radius:20px;
+  background-image: -webkit-linear-gradient(#efd100 0%, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
+  background-image: -o-linear-gradient(#efd100 0%, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
+  background-image: linear-gradient(#efd100 0%, #e2a233 38%, #f0c328 60%, #fff1a3 86%, #ffe13e 100%);
+}
+
+button:focus {
+	outline:0;
+}
+
+#dice {
+	height:100px;
+}
+
+.dice {
+	display:inline-block;
+}
+
+.dice img {
+	width:100px;
+	height:100px;
+}
+
+.status {
+	visibility: hidden;
+}

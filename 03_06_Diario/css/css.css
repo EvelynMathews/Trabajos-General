@@ -1,0 +1,49 @@
+a {
+	color:#0075c4;
+}
+
+h1 {
+	font-size:3em;
+	font-family:Georgia;
+}
+
+#contenido {
+	width:80%;
+	margin-left:10em;	
+}
+
+#articulo {
+	margin-top:4em;
+}
+
+#texto p:first-child::first-letter {
+	font:700 78px/80px Arial;
+	float:left;
+	margin-right:12px;
+}
+
+#navegacion, .epigrafe, #fecha {
+	font-family:sans-serif;
+}
+
+#navegacion {
+	font-size:.8em;
+}
+
+#navegacion a {
+	text-decoration: none;
+}
+
+.epigrafe {
+	font-size:.9em;
+}
+
+#fecha {
+	color:grey;
+}
+
+#texto {
+	width:70%;
+	font-size:1.2em;
+	line-height:1.5em;
+}

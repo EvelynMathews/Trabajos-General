@@ -1,0 +1,75 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:sans-serif;
+	padding:10px 30px;
+}
+
+#profile {
+	width:25%;
+	float:left;
+	margin-bottom:30px;
+}
+
+#muro {
+	width:70%;
+	float:right;
+	display: flex;
+	flex-direction: column;
+}
+
+ul {
+	width:70%;
+}
+
+li {
+	min-height: 100px;
+	list-style-type: none;
+
+}
+
+li img, p {
+	display: inline;
+	vertical-align: middle;
+}
+
+li p {
+	margin-left:5px;
+}
+
+#amigos {
+	width:25%;
+}
+
+#amigos img {
+	margin:0 5px;
+}
+
+.thumb {
+	width:80px;
+	height:80px;
+}
+
+@media (max-width:425px) {
+	.profile {
+		width:100%;
+		flex-direction: row;
+	}
+
+	.profile figure img {
+		max-width: 90%;
+	}
+
+	.posts {
+		width:100%;
+		flex-direction: column-reverse;
+	}
+
+	.photo-grid {
+		width:100%;
+	}
+}

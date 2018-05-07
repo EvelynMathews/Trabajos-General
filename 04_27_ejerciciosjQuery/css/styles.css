@@ -1,0 +1,107 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:"Roboto";
+}
+
+#container {
+	width:50%;
+	margin:50px auto;
+	display:flex;
+	justify-content: space-between;
+}
+
+.hidden {
+	display:none;
+}
+
+form section {
+	margin:10px 0;
+}
+
+.required label::after {
+	content: "*";
+	color:red;
+}
+
+label {
+	display:block;
+}
+
+.inline {
+	display:inline-block;
+}
+
+input[type=date] {
+	font-family:sans-serif;
+}
+
+#errors {
+	color:red;
+}
+
+#errors li {
+	margin:10px 0;
+}
+
+.errorBorder {
+	border:1px solid red;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+#modal {
+	display:none;
+	position:fixed;
+	z-index:1;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: white;
+	background-color: rgba(0,0,0,.4);
+	/*display:flex;*/
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-content {
+	background-color: #fefefe;
+	padding:30px;
+	border:1px solid black;
+	width:80%;
+	height:80%;
+}
+
+.modal-content .terms-text {
+	height:80%;
+	width:90%;
+	margin:0 auto;
+	padding:10px;
+	border:1px solid black;
+	overflow-y:scroll;
+}
+
+.modal-content h2 {
+	text-align:center;
+	margin:10px 0;
+}
+
+.modal-content p {
+	margin:10px 0;
+}
+
+#close-buttons {
+	margin-top:20px;
+	text-align:center;
+}
+
+#close-buttons a {
+	margin:0 10px;
+}

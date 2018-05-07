@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: verdana;
+}
+#container {
+  height: auto;
+  width: 800px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+article {
+  height: 150px;
+}
+#a {
+  padding: 10px;
+  background-color: #BDBDBD;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#a article {
+  width: 400px;
+  height: 300px;
+}
+#a .peru {
+  margin-right: 5px;
+  background-color: peru;
+}
+#a .peru:hover {
+  background-color: plum;
+}
+#a .yellow {
+  margin-left: 5px;
+  background-color: yellow;
+}
+#a .yellow:hover {
+  background-color: palegreen;
+}
+#b {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#b article {
+  width: 390px;
+  background-color: #80deea;
+}
+#b article:hover {
+  background-image: url(img/cat.jpg);
+  background-position: center;
+}
+#c {
+  background-color: #ffcc80;
+}
+#c article {
+  padding: 10px;
+}
+@media (max-width: 500px) {
+  #container,
+  #a,
+  #b {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #a article,
+  #b article,
+  #c article {
+    width: auto;
+  }
+  #container {
+    height: auto;
+    width: auto;
+  }
+  #a .peru {
+    margin: 0;
+  }
+  #a .yellow {
+    margin: 0;
+  }
+}

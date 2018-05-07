@@ -1,0 +1,76 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Comfortaa";
+	color:crimson;	
+}
+
+p {
+	margin:20px 0;
+	text-align: center;
+}
+
+#container-home {
+	width:95%;
+	margin:0 auto;
+	padding:20px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1 {
+	margin:15px 0;
+}
+
+#hoyCumple {
+	text-align:center;
+}
+
+#image-container {
+	display:flex;
+	justify-content: space-between;
+}
+
+.gif-fiesta {
+	width:15%;
+	background-image:url(../img/fiesta.gif);
+	background-size: contain;
+}
+
+.reverse {
+	transform:scaleX(-1);
+}
+
+img {
+	max-height:70vh;
+	margin:20px;
+}
+
+#cumplesGuardados {
+	padding:20px;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+ul li {
+	display:inline-block;
+	margin:10px 0;
+	font-size:18px;
+}
+
+ul li:after {
+	content: "|";
+}
+
+ul li button {
+	margin:0 10px;
+}
+
+@media (max-width:)

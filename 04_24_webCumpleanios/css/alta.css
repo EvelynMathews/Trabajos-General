@@ -1,0 +1,62 @@
+#container-alta {
+	width:90%;
+	margin:0 auto;
+	text-align: center;
+}
+
+form {
+	margin:30px 0;
+	text-align: center;
+}
+
+form input, label, button {
+	font-size:20px;
+	font-family:"Comfortaa";
+}
+
+label, input {
+	margin:0 10px;
+}
+
+input {
+	padding:2px 0;
+	border:1px solid crimson;
+}
+
+p {
+	margin:30px 0;
+}
+
+a {
+	font-size: 20px;
+	font-family: "Comfortaa";
+	color:crimson;
+}
+
+button {
+	padding:0 5px;
+}
+
+#imgSelector {
+	width:95%;
+	margin:50px auto;
+}
+
+#imgSelector img {
+	width:200px;
+	height:200px;
+	margin:10px;
+}
+
+@media (max-width:1100px) {
+	form {
+		height:auto;
+		text-align:left;
+		margin-bottom:20px;
+	}
+
+	form input, form label {
+		display:block;
+		margin:10px 0;
+	}
+}

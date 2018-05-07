@@ -1,0 +1,94 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Lato;
+}
+
+#container {
+	height:100vh;
+	width:90%;
+	margin:20px auto;
+}
+
+/* SIDEBAR */
+
+aside {
+	float:left;
+	width:20%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	border:1px solid black;
+}
+
+.logo {
+	margin:15px;
+}
+
+.logo img {
+	max-width: 100%
+}
+
+.filtros {
+	margin-top:50px;
+	font-size:18px;
+	display:flex;
+	flex-direction:column;
+}
+
+.dropdown {
+	font-size:16px;
+	margin:5px 0;
+}
+
+.checkbox {
+	margin:10px 0;
+	display:flex;
+	flex-direction:column;
+}
+
+.checkbox input {
+	margin:0 10px;
+}
+
+aside .fa-truck {
+	margin:5px;
+}
+
+/* MAIN */
+
+main {
+	padding-left:100px;
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+}
+
+.producto {
+	border:1px solid black;
+	margin:20px 10px;
+	position:relative;
+}
+
+.producto:hover {
+	border-color:pink;
+	background-color: pink;
+}
+
+.producto figcaption {
+	height:50px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.producto .fa-truck {
+	position:absolute;
+	top:10px;
+	left:10px;
+}

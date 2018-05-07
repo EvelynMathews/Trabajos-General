@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carrito</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div class="container">
+
+		<header>
+			<h1>Estructura de carrito</h1>
+			<a href="" id="verCarrito"><i class="fas fa-angle-down"></i> Ver carrito <i class="fas fa-shopping-cart"></i></a>
+		</header>
+		
+		<div class="products-row">
+			<div class="product" data-id="001">
+				<img src="products/b.jpg">
+				<p class="descripcion">Pulsera</p> 
+				<p class="precio">$1500.00</p>
+				<input type="number" name="cantidad" class="cantidad" value="1">
+				<button class="add">Agregar al carrito</button>
+			</div>
+
+			<div class="product" data-id="002">
+				<img src="products/e.jpg">
+				<p class="descripcion">Anillo de diamantes</p>
+				<p class="precio">$8500</p>
+				<input type="number" name="cantidad" class="cantidad" value="1">
+				<button class="add">Agregar al carrito</button>
+			</div>
+
+			<div class="product" data-id="003">
+				<img src="products/f.jpg">
+				<p class="descripcion">Collar colores</p>
+				<p class="precio">$4500</p>
+				<input type="number" name="cantidad" class="cantidad" value="1">
+				<button class="add">Agregar al carrito</button>
+			</div>
+
+			<div class="product" data-id="004">
+				<img src="products/g.jpg">
+				<p class="descripcion">Anillo de diamantes 2</p>
+				<p class="precio">$8400</p>
+				<input type="number" name="cantidad" class="cantidad" value="1">
+				<button class="add">Agregar al carrito</button>
+			</div>
+	
+		</div>
+
+	</div>
+
+	<footer>
+		<p>Este es el footer</p>
+	</footer>
+
+	<div id="carrito"><!-- COSO MODAL -->		
+		<a href="" id="ocultarCarrito">X</a>
+		<h3>Carrito de compras</h3>
+		<p class="emptyCartMsg">No hay items en el carrito</p>
+		<ul id="items_lista"></ul>
+		<button class="emptyCart">Vaciar carrito</button>
+		<p id="precioTotal">Total: $<span class="subtotal">0</span></p>
+	</div>
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/indexv2.js"></script>
+</body>
+</html>

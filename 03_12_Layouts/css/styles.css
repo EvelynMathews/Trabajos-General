@@ -1,0 +1,63 @@
+* {
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+#container {
+	width:60%;
+	margin:0 auto;
+	position:relative;
+}
+
+#logo, nav, #banner, main, aside, #mainBody, footer {
+	background-color: lavender;
+	margin-top:10px;		/* para ver los elementos separados */
+}
+
+#logo {
+	height:100px;
+}
+
+nav {
+	height: 50px;
+}
+
+#banner {
+	height:150px;
+}
+
+main {
+
+}
+
+aside, #mainBody {
+	height:200px;
+}
+
+aside {
+	float:left;
+	width:30%;		
+}
+
+#mainBody {
+	float:right;
+	width:69%;
+}
+
+.clearfix {
+	clear:both;		/* PARA EVITAR QUE EL FOOTER SE SUBA AL MAIN QUE TIENE ELEMENTOS FLOTANTES - NO ES NECESARIO SI HAY DISPLAY:INLINE */
+}
+
+footer {
+	position:relative;
+	height:100px;
+	margin-top:20px;
+}
+
+
+

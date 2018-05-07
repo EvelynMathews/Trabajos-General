@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans";
+}
+
+select {
+	font-family: "Open Sans";
+}
+
+#container {
+	width:750px;
+	margin:50px 50px 0;
+	padding:20px;
+	background-color: #eeeeee;
+	overflow:hidden;
+}
+
+#menu {
+	float:left;
+}
+
+h2 {
+	font-family: "Leckerli One"
+}
+
+h2.titulo {
+	margin-bottom: 15px;
+	color:#e65d52;
+}
+
+form * {
+	margin:10px 0;
+}
+
+button {
+	display:block;
+	margin:20px auto 0;
+	padding: 2px 5px;
+}
+
+#ticket {
+	width: 40%;
+	height:200px;
+	float: right;
+	margin:10px;
+	padding:10px;
+	background-color: #e65d52;
+}
+
+ul {
+	margin-top:20px;
+	list-style-position: inside;
+}

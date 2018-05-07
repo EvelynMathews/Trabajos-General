@@ -1,0 +1,12 @@
+body {
+	color:orchid;
+}
+
+.space {
+	height:30px;
+}
+
+.grid {
+	border:1px solid orchid;
+	height:120px;
+}
